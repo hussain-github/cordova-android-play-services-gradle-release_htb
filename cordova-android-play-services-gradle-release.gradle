@@ -1,6 +1,5 @@
 repositories{
   // Google APIs are now hosted at Maven
-  google()
   maven {
     url 'https://maven.google.com'
   }
