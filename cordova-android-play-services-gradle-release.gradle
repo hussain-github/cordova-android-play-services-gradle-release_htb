@@ -22,7 +22,3 @@ configurations.all {
         if (details.requested.group in LIBS) { details.useVersion PLAY_SERVICES_VERSION }
     }
 }
-
-apply plugin: 'com.google.gms.google-services'
-// Work around for onesignal-gradle-plugin compatibility
-com.google.gms.googleservices.GoogleServicesPlugin.config.disableVersionCheck = true
