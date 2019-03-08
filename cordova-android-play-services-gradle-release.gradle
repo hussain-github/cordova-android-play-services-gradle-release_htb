@@ -6,7 +6,7 @@ repositories{
   }
 }
 
-def PLAY_SERVICES_VERSION = "1.1.0"
+def PLAY_SERVICES_VERSION = "15.+"
 def PLUGIN_NAME = "cordova-android-play-services-gradle-release"
 
 // List of libs to search for.
@@ -23,3 +23,7 @@ configurations.all {
         if (details.requested.group in LIBS) { details.useVersion PLAY_SERVICES_VERSION }
     }
 }
+
+apply plugin: 'com.google.gms.google-services'
+// Work around for onesignal-gradle-plugin compatibility
+com.google.gms.googleservices.GoogleServicesPlugin.config.disableVersionCheck = true
