@@ -5,7 +5,7 @@ repositories{
   }
 }
 
-def PLAY_SERVICES_VERSION = "1.1.0"
+def PLAY_SERVICES_VERSION = "+"
 def PLUGIN_NAME = "cordova-android-play-services-gradle-release"
 
 // List of libs to search for.
